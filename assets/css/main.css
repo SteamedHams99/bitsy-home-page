@@ -2265,9 +2265,40 @@ input, select, textarea {
 /* Small */
 
 	@media screen and (max-width: 736px) {
+		 #top {
+        padding: 15em 0 10em 0; /* Increase pink section height */
+        text-align: center; /* Center content on mobile */
+    }
+
+    #top h1 {
+        margin-top: 3em; /* Push the text even lower */
+    }
+
+    /* Ensuring the text does not overlap */
+    #top .row {
+        flex-direction: column; /* Stack everything */
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Make sure the image stays oval and centered */
+    #top .image {
+        width: 12em; /* Adjust width for oval shape */
+        height: 16em; /* Keep height taller to maintain oval */
+        border-radius: 50%; /* Ensures oval effect */
+        object-fit: cover; /* Prevents distortion */
+        display: block;
+        margin: 0 auto 2em auto; /* Centers and adds space below */
+    }
+    
+    /* Adjust spacing below the text to keep everything aligned */
+    #top p {
+        margin-bottom: 2em; /* Adds space before Buy My Book */
+    }
+}
 
 		/* Basic */
-
+	
 			body {
 				padding-top: 44px;
 			}
