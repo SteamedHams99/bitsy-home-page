@@ -2133,27 +2133,29 @@ input, select, textarea {
 	}
 
 		#top .image {
-			border-radius: 100%;
-			width: 20em;
-			height: 20em;
-			margin: 0;
-		}
+    border-radius: 50%; /* Makes the image more round instead of oval */
+    width: 18em; /* Slightly smaller to better align with text */
+    height: 18em;
+    margin-top: -2em; /* Moves the image slightly higher */
+}
 
-			#top .image img {
-				border-radius: 100%;
-			}
+/* Ensuring the text aligns better */
+#top .row {
+    align-items: center; /* Keeps text and image aligned */
+}
 
-		#top h1 {
-			margin-top: 0.35em;
-		}
+#top h1 {
+    margin-top: 0.35em;
+}
 
-		#top p {
-			font-size: 1.5em;
-			line-height: 1.75em;
-		}
+#top p {
+    font-size: 1.5em;
+    line-height: 1.75em;
+    margin-bottom: 1em; /* Adds space before "Buy my book" button */
+}
 
-			#top p a {
-				color: inherit;
+#top p a {
+    color: inherit;
 			}
 
 	#contact footer {
