@@ -245,40 +245,60 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 1280px) {
+	@media screen and (max-width: 1280px) {
+		#top .image {
+				width: 16em; /* Slightly reduce image size */
+				height: auto;
+	}
 
-			.container {
-				width: 960px;
-			}
-
-				.container.medium {
-					width: 720px;
-				}
+		#top .row {
+			align-items: center; /* Ensure alignment looks good */
+	}
 
 		}
 
-		@media screen and (max-width: 980px) {
+@media screen and (max-width: 980px) {
+	#top .image {
+		width: 14em; /* Reduce image size */
+		height: auto;
+		margin-bottom: 1em; /* Add space below image */
+	}
 
-			.container {
-				width: 100%;
-			}
+	#top .row {
+		flex-direction: column; /* Stack image and text */
+		align-items: center;
+		text-align: center;
+	}
 
-				.container.medium {
-					width: 75%;
-				}
+	#top .col-4 {
+		width: 100%; /* Full width image */
+	}
 
+	#top .col-8 {
+		width: 90%; /* Keep text from being too wide */
+	}
 		}
 
 		@media screen and (max-width: 736px) {
+	#top .image {
+		width: 12em; /* Make image even smaller */
+		height: auto;
+		margin-bottom: 1em;
+	}
 
-			.container {
-				width: 100%;
-				max-width: calc(100% - 30px);
-			}
+	#top .row {
+		flex-direction: column; /* Stack everything */
+		align-items: center;
+		text-align: center;
+	}
 
-				.container.medium {
-					width: 100%;
-				}
+	#top .col-4 {
+		width: 100%;
+	}
+
+	#top .col-8 {
+		width: 90%;
+	}
 
 		}
 
