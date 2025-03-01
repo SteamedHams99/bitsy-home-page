@@ -281,9 +281,12 @@ input, select, textarea {
 
 		@media screen and (max-width: 736px) {
 	#top .image {
-		width: 12em; /* Make image even smaller */
-		height: auto;
-		margin-bottom: 1em;
+		width: 10em; /* Reduce size */
+		height: 10em; /* Ensure it stays a perfect circle */
+		border-radius: 50%; /* Make it fully round */
+		object-fit: cover; /* Prevents stretching */
+		display: block;
+		margin: 0 auto 1em auto; /* Centers the image */
 	}
 
 	#top .row {
