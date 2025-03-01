@@ -2151,7 +2151,8 @@ input, select, textarea {
 #top p {
     font-size: 1.5em;
     line-height: 1.75em;
-    margin-bottom: 1em; /* Adds space before "Buy my book" button */
+        padding-top: 3em; /* Pushes text down further */
+    margin-bottom: 1.5em; /* Adds space before the "Buy my book" button */
 }
 
 #top p a {
