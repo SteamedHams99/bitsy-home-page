@@ -2219,50 +2219,71 @@ input, select, textarea {
 			#copyright a:hover {
 				color: #777;
 			}
+/* Desktop Screens (Above 1280px) */
+@media screen and (min-width: 1281px) {
 
+	#top .row {
+		display: flex;
+		flex-direction: row;
+		justify-content: center; /* Moves image and text toward center */
+		align-items: center;
+		text-align: left; /* Ensures text stays left-aligned */
+		gap: 3em; /* Reduces space between image and text */
+	}
+
+	#top .image {
+		width: 22em; /* Adjust if needed */
+		height: 28em; /* Ensures oval shape */
+		border-radius: 50%;
+		object-fit: cover;
+		margin-left: 1em; /* Moves image slightly closer to text */
+	}
+}
 /* Large */
 
 	@media screen and (max-width: 1280px) {
 
-		/* Basic */
+	/* Basic */
 
-			body {
-				font-size: 11pt;
-			}
-
-			input, textarea, select {
-				font-size: 11pt;
-			}
-
-			header {
-				margin: 0 0 4em 0;
-			}
-
-		/* Wrappers */
-
-			.wrapper {
-				padding: 5em 0 5em 0;
-				text-align: center;
-			}
-
-				.wrapper.style4 .row-special {
-					margin: 2em 0 0 0;
-					padding: 2em 0 2em 0;
-				}
-
-		/* Articles */
-
-			#top {
-				padding: 8em 0;
-			}
-
-				#top .image {
-					width: 24em;
-					height: 24em;
-					margin: 0;
-				}
-
+	body {
+		font-size: 11pt;
 	}
+
+	input, textarea, select {
+		font-size: 11pt;
+	}
+
+	header {
+		margin: 0 0 4em 0;
+	}
+
+	/* Wrappers */
+
+	.wrapper {
+		padding: 5em 0 5em 0;
+		text-align: center;
+	}
+
+	.wrapper.style4 .row-special {
+		margin: 2em 0 0 0;
+		padding: 2em 0 2em 0;
+	}
+
+	/* Articles */
+
+	#top {
+		padding: 8em 0;
+		text-align: center; /* Ensures mobile stays centered */
+	}
+
+	#top .image {
+		width: 24em;
+		height: 24em;
+		margin: 0 auto 2em auto; /* Centers the image */
+	}
+
+}
+
 
 /* Medium */
 
