@@ -2229,16 +2229,16 @@ input, select, textarea {
 		align-items: center;
 		text-align: left; /* Ensures text stays left-aligned */
 		gap: 2em; /* Reduces space between image and text */
-		max-width: 1000px; /* Ensures content does not stretch too much */
+		max-width: 800px; /* Ensures content does not stretch too much */
 		margin: 0 auto; /* Centers everything */
 	}
 
 	#top .image {
 		width: 18em; /* Make slightly narrower */
 		height: 24em; /* Increase height to create oval effect */
-		border-radius: 50%; /* Ensures oval shape */
+		border-radius: 50% / 40%; /* Ensures oval shape */
 		object-fit: cover;
-		margin-left: 0; /* Move closer to text */
+		 margin: 0 auto; /* Centers the image */
 	}
 	
 	#top h1 {
