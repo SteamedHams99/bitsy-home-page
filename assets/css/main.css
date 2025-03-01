@@ -2128,7 +2128,7 @@ input, select, textarea {
 	}
 
 	#top {
-		padding: 10em 0 10em 0;
+		padding: 15em 0 10em 0; /* Increase top padding */
 		text-align: left;
 	}
 
