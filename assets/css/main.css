@@ -2228,7 +2228,7 @@ input, select, textarea {
 		justify-content: center; /* Moves image and text toward center */
 		align-items: center;
 		text-align: left; /* Ensures text stays left-aligned */
-		gap: 2em; /* Reduces space between image and text */
+		gap: 1em; /* Reduces space between image and text */
 		max-width: 800px; /* Ensures content does not stretch too much */
 		margin: 0 auto; /* Centers everything */
 	}
