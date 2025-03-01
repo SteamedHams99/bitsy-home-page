@@ -2138,8 +2138,7 @@ input, select, textarea {
     border-radius: 50%; /* Ensures the oval effect */
     object-fit: cover; /* Prevents stretching */
     display: block;
-    margin: 0 auto; /* Centers the image */
-}
+    margin: 0 auto 0.5em auto; /* Add more space below the image */
 
 /* Ensuring the text aligns better */
 #top .row {
@@ -2148,6 +2147,7 @@ input, select, textarea {
 
 #top h1 {
     margin-top: 0.35em;
+    margin-bottom: 0.25em; /* Reduce space below "Hi, I'm Cindy Meister" */
 }
 
 #top p {
