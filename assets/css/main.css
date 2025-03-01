@@ -2132,11 +2132,13 @@ input, select, textarea {
 		text-align: left;
 	}
 
-		#top .image {
-    border-radius: 50%; /* Makes the image more round instead of oval */
-    width: 18em; /* Slightly smaller to better align with text */
-    height: 18em;
-    margin-top: -2em; /* Moves the image slightly higher */
+#top .image {
+    width: 12em; /* Make slightly narrower */
+    height: 16em; /* Make taller to create oval shape */
+    border-radius: 50%; /* Ensures the oval effect */
+    object-fit: cover; /* Prevents stretching */
+    display: block;
+    margin: 0 auto; /* Centers the image */
 }
 
 /* Ensuring the text aligns better */
