@@ -2217,35 +2217,50 @@ input, select, textarea {
 			#copyright a:hover {
 				color: #777;
 			}
-/* Desktop Screens (Above 1280px) */
-@media screen and (min-width: 1281px) {
 
-#top .row {
-		display: flex;
-		flex-direction: row;
-		justify-content: center; /* Moves image and text toward center */
-		align-items: center;
-		text-align: left; /* Ensures text stays left-aligned */
-		gap: 1em; /* Reduces space between image and text */
-		max-width: 800px; /* Ensures content does not stretch too much */
-		margin: 0 auto; /* Centers everything */
-	}
+/* Individual Monitor and Display Sizes */
 
-	#top .image {
-		width: 18em; /* Make slightly narrower */
-		height: 24em; /* Increase height to create oval effect */
-		border-radius: 50% / 40%; /* Ensures oval shape */
-		object-fit: cover;
-		 margin: 0 auto; /* Centers the image */
-	}
-	
-	#top h1 {
-		margin-top: 0; /* Remove extra space above text */
-	}
+@media screen and (min-width: 981px) { /* Covers both laptop & desktop */
+    #top .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center; /* Moves image and text toward center */
+        align-items: center; /* Aligns image and text */
+        text-align: left; /* Ensures text stays left-aligned */
+        max-width: 1000px; /* Constrains layout width */
+        margin: 0 auto; /* Centers everything */
+    }
 
-	#top p {
-		margin-top: 0.25em; /* Move text slightly closer to the heading */
-	}
+    #top .row {
+        display: flex;
+        align-items: center; /* Align image and text */
+        justify-content: space-between; /* Ensures spacing stays balanced */
+        gap: 1em; /* Reduces extra space between image and text */
+        flex-grow: 1;
+    }
+
+    #top .image {
+        width: 16em; /* Adjust width */
+        height: 22em; /* Increase height for oval */
+        border-radius: 50% / 60%; /* Ensures oval shape */
+        object-fit: cover;
+        display: block;
+        margin: 0; /* Removes excess margin */
+    }
+
+    #top .col-8 {
+        flex-grow: 1; /* Allows text area to expand properly */
+        max-width: 500px; /* Prevents text from stretching too far */
+    }
+
+    #top h1 {
+        margin-top: 0; /* Remove extra space above text */
+        margin-bottom: 0.2em; /* Reduce spacing below */
+    }
+
+    #top p {
+        margin-top: 0.1em; /* Move text slightly closer to the heading */
+    }
 }
 /* Large */
 
