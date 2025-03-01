@@ -2134,14 +2134,12 @@ input, select, textarea {
 
 /* Image container with proper spacing */
 #top .image {
-    width: 12em; /* Keep width slightly narrower */
-    height: 16em; /* Make taller to create an oval shape */
-    border-radius: 50%;
-    overflow: hidden; /* Ensures image does not exceed its border */
-    display: flex; /* Aligns image within container */
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto 1em auto; /* Moves image slightly higher */
+    width: 18em; /* Adjust width */
+    height: 24em; /* Increase height to create an oval shape */
+    border-radius: 50% / 60%; /* Creates an oval effect */
+    object-fit: cover;
+    display: block;
+    margin: 0 auto; /* Centers the image */
 }
 
 /* Ensures the image inside remains oval and properly fills the space */
