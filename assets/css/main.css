@@ -2124,7 +2124,7 @@ input, select, textarea {
 /* Featured Images */
 .featured-images {
     width: 300px;  /* Adjust as needed */
-    height: 250px; /* Ensures all are uniform */
+    height: 225px; /* Ensures all are uniform */
     object-fit: cover; /* Keeps aspect ratio without distortion */
     display: block;
     border-radius: 3px; /* Optional: Slight rounding */
