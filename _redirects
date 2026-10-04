@@ -1,0 +1,3 @@
+# Netlify redirects — keep old links working
+/biography.html  /about.html  301
+/homepage.html   /            301
